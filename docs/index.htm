@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Docs | A one-page documentation template</title>
+		<link rel="stylesheet" href="styles/themes/default.css" title="default" />
+		<link rel="alternate stylesheet" href="styles/themes/basic.css" title="basic" />
+		<link rel="stylesheet" href="js/highlight/styles/vs.css" />
+		<script src="js/highlight/highlight.pack.js" type="text/javascript"></script>
+		<style type="text/css">
+			/* page specific styles */
+		</style>
+		<script type="text/javascript">
+		function setActiveStyleSheet(title) {
+		   var i, a, main;
+		   for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+			 if(a.getAttribute("rel").indexOf("style") != -1
+				&& a.getAttribute("title")) {
+			   a.disabled = true;
+			   if(a.getAttribute("title") == title) a.disabled = false;
+			 }
+		   }
+		}
+		</script>
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="top">
+		<h1 id="title">Docs</h1>
+		<h2 id="description">A one-page documentation template to get you started quickly</h2>
+		<a href="#toc" id="toc-link">Table of Contents</a>
+	</div>
+
+	<div id="toc" class="section clearthis">
+		<h1>Table of Contents</h1>
+
+		<div class="col one clear">
+			<h2>Documentation</h2>
+			<ul>
+				<li><a href="#overview">Overview <span class="arrow">&raquo;</span></a></li>
+				<li><a href="#themes">Themes <span class="arrow">&raquo;</span></a></li>
+			</ul>
+		</div>
+		<div class="col two">
+			<h2>Examples</h2>
+			<ul>
+				<li><a href="#examples">See All Examples <span class="arrow">&raquo;</span></a></li>
+			</ul>
+		</div>
+		<div class="col three">
+			<h2>Project Notes</h2>
+			<ul>
+				<li><a href="changelog.md">Changelog <span class="arrow">&raquo;</span></a></li>
+				<li><a href="to-do.md">Planned Enhancements <span class="arrow">&raquo;</span></a></li>
+				<li><a href="#support">Support <span class="arrow">&raquo;</span></a></li>
+				<li><a href="#license">License <span class="arrow">&raquo;</span></a></li>
+			</ul>
+		</div>
+		<div class="col four">
+			<h2>Contributors</h2>
+			<ul>
+				<li><em>chad d</em> | <a href="http://web.cmfolio.com/">cmfolio.com</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="overview" class="section">
+		<h1>Overview</h1>
+		<p>Learn what <strong>Docs</strong> is all about and how you can use it.</p>
+		<p></p>
+		
+		<h2>What does it do?</h2>
+		<p><strong>Docs</strong> is a simple one-page HTML template for documentation of a project. It is made to provide documentation for smaller projects that don't need a whole user guide. An ideal use of <strong>Docs</strong> would be for a project with 5-6 basic <em>sections</em> that need to be covered.</p>
+
+		<h2>What are some good uses for Docs?</h2>
+		<p><strong>Docs</strong> is perfect for your JavaScript plugin, basic framework, module, or small API. </p>
+	
+		<h2>How hard is it to implement?</h2>
+		<p>There's only a few main steps to take to get your rotator up and running.</p>
+		<p><strong>Copy and rename the <code>_template</code> folder in your project: </strong></p>
+		<ul class="list">
+			<li>Copy the <code>_template</code> folder from the root of the repo</li>
+			<li>Paste it into your project and rename it to <code>docs</code> or whatever you'd like</li>
+		</ul>
+		
+		<p><strong>Replace the following variables in the <code>index.htm</code> file: </strong></p>
+		<ul class="list">
+			<li><strong>_Project_</strong> becomes your project name, e.g. <strong>Docs</strong> or <strong>Docs API</strong></li>
+			<li><strong>_Project Description Short_</strong> becomes your project short description (one sentence), e.g. <em>A one-page documentation template</em>; used in page title</li>
+			<li><strong>_Project Description_</strong> becomes your project description, e.g. <em>A one-page documentation template built to help you quickly set up documentation for your project</em></li>
+			<li><strong>_Company_</strong> becomes the company or person who holds the license for this project, e.g. <em>cmfolio</em></li>
+			<li><strong>_Company URL_</strong> becomes your company or personal url, e.g. <em>http://web.cmfolio.com</em></li>
+		</ul>
+
+		<h2>How can I customize <strong>Docs</strong>?</h2>
+		<p>Since you already have full control over the HTML you generate, we provide some basic themes for you to start with. You can either take out themes and modify theme or create a new one from scratch.</p>
+
+		<h2>Some Examples</h2>
+		<p>This documentation is powered by <strong>Docs</strong> so there really isn't much more to show. You can see our different <a href="#themes">Themes</a> if you'd like.</p>
+	</div>
+	
+	<!-- THEMES -->
+	<div id="themes" class="section">
+		<h1>Themes</h1>
+		<p>Design <strong>Docs</strong> to fit your project</p>
+
+		<h2>Available Themes</h2>
+		<p>We currently include two themes with <strong>Docs</strong>: <a href="#" onclick="setActiveStyleSheet('default'); return false;">default</a> and <a href="#" onclick="setActiveStyleSheet('basic'); return false;">basic</a>. Click on the links to preview them on this documentation.</p>
+		
+		<h2>Creating Themes</h2>
+		<p>...</p>
+		
+		<h2>Contributing Themes</h2>
+		<p>If you have created a theme that you would like to contribute to <strong>Docs</strong>, please <a href="https://github.com/chadwithuhc/docs-template" target="_blank">fork the project</a> on github and submit a pull request for us to add it in. We thank you for any contributions!</p>
+	</div>
+
+	<!-- SUPPORT -->
+	<div id="support" class="section">
+		<h1>Support</h1>
+		<p>eh. not so much.</p>
+
+		<h2>Sorry</h2>
+		<p>Unfortunately, we do not offer any support at the moment. <strong>Docs</strong> is made as a base template, so turn it into what you want!</p>
+	</div>
+
+
+	<!-- LICENSE -->
+	<div id="license" class="section">
+		<h1>License</h1>
+		<p>What you can and can't do with this project.</p>
+
+		<h2>Released under MIT License</h2>
+		<p>We have released <strong>Docs</strong> under the MIT License which is stated as:</p>
+		<pre><code class="no-highlight">Copyright &copy; 2011 by cmfolio
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</code></pre>
+	</div>
+
+	<div id="footer">
+		<p>Copyright &copy; 2011 <a href="#license">MIT License</a> by <a href="http://cmfolio.com">cmfolio</a></p>
+	</div>
+
+</div>
+
+</body>
+</html>
