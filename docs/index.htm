@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Docs | A one-page documentation template</title>
-		<link rel="stylesheet" href="styles/themes/default.css" title="default" />
-		<link rel="alternate stylesheet" href="styles/themes/basic.css" title="basic" />
-		<link rel="stylesheet" href="js/highlight/styles/vs.css" />
-		<script src="js/highlight/highlight.pack.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="../_template/styles/themes/default.css" title="default" />
+		<link rel="alternate stylesheet" href="../_template/styles/themes/basic.css" title="basic" />
+		<link rel="stylesheet" href="../_template/js/highlight/styles/vs.css" />
+		<script src="../_template/js/highlight/highlight.pack.js" type="text/javascript"></script>
 		<style type="text/css">
 			/* page specific styles */
 		</style>
@@ -79,25 +79,28 @@
 		<h2>How hard is it to implement?</h2>
 		<p>There's only a few main steps to take to get your rotator up and running.</p>
 		<p><strong>Copy and rename the <code>_template</code> folder in your project: </strong></p>
-		<ul class="list">
+		<ol class="numbers">
 			<li>Copy the <code>_template</code> folder from the root of the repo</li>
 			<li>Paste it into your project and rename it to <code>docs</code> or whatever you'd like</li>
-		</ul>
+		</ol>
 		
 		<p><strong>Replace the following variables in the <code>index.htm</code> file: </strong></p>
-		<ul class="list">
-			<li><strong>_Project_</strong> becomes your project name, e.g. <strong>Docs</strong> or <strong>Docs API</strong></li>
-			<li><strong>_Project Description Short_</strong> becomes your project short description (one sentence), e.g. <em>A one-page documentation template</em>; used in page title</li>
-			<li><strong>_Project Description_</strong> becomes your project description, e.g. <em>A one-page documentation template built to help you quickly set up documentation for your project</em></li>
-			<li><strong>_Company_</strong> becomes the company or person who holds the license for this project, e.g. <em>cmfolio</em></li>
-			<li><strong>_Company URL_</strong> becomes your company or personal url, e.g. <em>http://web.cmfolio.com</em></li>
+		<ul>
+			<li><var>_Project_</var> &mdash; becomes your project name; (E.g. <strong>Docs</strong> or <strong>Docs API</strong>)</li>
+			<li><var>_Project Description Short_</var> &mdash; becomes your project short description (one sentence); (E.g. <em>A one-page documentation template</em>; used in page title)</li>
+			<li><var>_Project Description_</var> &mdash; becomes your project description; (E.g. <em>A one-page documentation template built to help you quickly set up documentation for your project</em>)</li>
+			<li><var>_Company_</var> &mdash; becomes the company or person who holds the license for this project; (E.g. <em>cmfolio</em>)</li>
+			<li><var>_Company URL_</var> &mdash; becomes your company or personal url; (E.g. <em>http://web.cmfolio.com</em>)</li>
 		</ul>
 
 		<h2>How can I customize <strong>Docs</strong>?</h2>
-		<p>Since you already have full control over the HTML you generate, we provide some basic themes for you to start with. You can either take out themes and modify theme or create a new one from scratch.</p>
+		<p>Since you already have full control over the HTML you generate, we provide some basic themes for you to start with. You can either take out themes and modify them or create a new one from scratch.</p>
+
+		<h2>What are the requirements?</h2>
+		<p><strong>Docs</strong> is purely HTML, CSS and JavaScript. You do not need any specific backend language or database to run <strong>Docs</strong>. This is done to ensure it can run on a machine locally so you can include documentation with your project regardless of what platform it is on.</p>
 
 		<h2>Some Examples</h2>
-		<p>This documentation is powered by <strong>Docs</strong> so there really isn't much more to show. You can see our different <a href="#themes">Themes</a> if you'd like.</p>
+		<p>This documentation is powered by <strong>Docs</strong> so there really isn't much more to show. You can see our different <a href="#themes">Themes</a> or take the time to view the source of these docs or the <code>_template</code> folder if you'd like.</p>
 	</div>
 	
 	<!-- THEMES -->
@@ -105,8 +108,8 @@
 		<h1>Themes</h1>
 		<p>Design <strong>Docs</strong> to fit your project</p>
 
-		<h2>Available Themes</h2>
-		<p>We currently include two themes with <strong>Docs</strong>: <a href="#" onclick="setActiveStyleSheet('default'); return false;">default</a> and <a href="#" onclick="setActiveStyleSheet('basic'); return false;">basic</a>. Click on the links to preview them on this documentation.</p>
+		<h2 id="available_themes">Available Themes</h2>
+		<p>We currently include two themes with <strong>Docs</strong>: <a href="#available_themes" onclick="setActiveStyleSheet('default')">default</a> and <a href="#available_themes" onclick="setActiveStyleSheet('basic')">basic</a>. Click on the links to preview them on this documentation.</p>
 		
 		<h2>Creating Themes</h2>
 		<p>...</p>

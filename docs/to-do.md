@@ -10,3 +10,4 @@ A one-page template for documentation on your project
 - Improve examples template
 - Add additional theme
 - Add js config options
+- Add api call auto toc generation (js)

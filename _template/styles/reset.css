@@ -10,6 +10,9 @@ table {border-collapse:collapse;border-spacing:0px}
 td, caption, th, tfoot, thead {text-align:left;vertical-align:top}
 input[type='submit'],input[type='button'],input[type='reset'] {text-align:center}
 q:before, q:after {content:""}
+sup, sub {height:0;line-height:1;vertical-align:baseline;_vertical-align:bottom;position:relative}
+sup {bottom:1ex}
+sub {top:.5ex}
 .clearthis:after {content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearthis {display:inline-block}
 .clearthis {display:block} /* Hides from IE-mac \*/
