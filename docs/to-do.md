@@ -1,5 +1,5 @@
 ﻿# Docs Template  
-A one-page template for documentation on your project
+A basic HTML/CSS template for code documentation.
 
 ---
 
@@ -11,3 +11,4 @@ A one-page template for documentation on your project
 - Add additional theme
 - Add js config options
 - Add api call auto toc generation (js)
+- Add more JS plugins

@@ -1,5 +1,5 @@
 ﻿# Docs Template  
-A one-page template for documentation on your project
+A basic HTML/CSS template for code documentation.
 
 ---
 
