@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+    <title>Documentation Style Guide | Docs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="../_template/styles/themes/default.css" title="default">
+		<link rel="stylesheet" href="../_template/js/highlight/styles/vs.css">
+		<script src="../_template/js/highlight/highlight.pack.js" type="text/javascript"></script>
+		<style type="text/css">
+			/* page specific styles */
+		</style>
+</head>
+<body>
+
+<div id="wrapper" class="container">
+
+	<header id="top">
+		<h1 id="title">Docs Style Guide</h1>
+		<h2 id="description">A documentation style guide for consistancy.</h2>
+		<a href="#toc" id="toc-link">Table of Contents</a>
+	</header>
+
+	<nav id="toc" class="section clearfix">
+		<h1 class="title">Table of Contents</h1>
+
+		<div class="columns four">
+			<h2>Documentation</h2>
+			<ul>
+				<li><a href="#overview">Overview <span class="arrow">&raquo;</span></a></li>
+				<li><a href="#structure">Structure <span class="arrow">&raquo;</span></a></li>
+				<li><a href="#navigation">Navigation <span class="arrow">&raquo;</span></a></li>
+				<li><a href="#writing_the_overview">Writing the Overview <span class="arrow">&raquo;</span></a></li>
+				<li><a href="#config">Configuration <span class="arrow">&raquo;</span></a></li>
+			</ul>
+		</div>
+		<div class="columns four">
+			<h2>Examples</h2>
+			<ul>
+				<li><a href="#elements">Elements <span class="arrow">&raquo;</span></a></li>
+				<li class="child"><a href="#elements_basic">Basic <span class="arrow">&raquo;</span></a></li>
+				<li class="child"><a href="#elements_notes">Notes, Importants <span class="arrow">&raquo;</span></a></li>
+				<li class="child"><a href="#elements_code_blocks">Code Blocks <span class="arrow">&raquo;</span></a></li>
+				<li class="child"><a href="#elements_examples">Examples, Output Samples <span class="arrow">&raquo;</span></a></li>
+				<li><a href="#sections">Sections <span class="arrow">&raquo;</span></a></li>
+				<li class="child"><a href="#sections_info">Title, Description, Meta <span class="arrow">&raquo;</span></a></li>
+				<li class="child"><a href="#sections_api">API Items <span class="arrow">&raquo;</span></a></li>
+			</ul>
+		</div>
+		<div class="columns four">
+			<h2>Project Notes</h2>
+			<ul>
+				<li><a href="index.html">Docs Project Homepage <span class="arrow">&raquo;</span></a></li>
+				<li><a href="#changelog">Changelog <span class="arrow">&raquo;</span></a></li>
+				<li><a href="#license">License <span class="arrow">&raquo;</span></a></li>
+			</ul>
+		</div>
+		<div class="columns four">
+			<h2>Contributors</h2>
+			<ul>
+				<li><em>chad d</em> | <a href="http://web.cmfolio.com/">cmfolio.com</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section id="overview" class="section">
+		<h1 class="title">Overview</h1>
+		<p class="description">Learn why we created a style guide and why you should adhere to it.</p>
+		
+		<h2>Why do we need a style guide?</h2>
+		<p><strong>Docs</strong> created a style guide for a few reasons. The main reason is because Docs is a template. Templates have specific ways they need to be filled out otherwise they might break. For this, we have set some standards that we think are in the best interest for the end user reading your documentation, while also providing the least amount of code to make it have semantic meaning.</p>
+		<p>Another reason is simply because there is no standard other than what you use to document your project. If you're using Docs for that, then this is the standard you will need to follow. Of course, you could break free from this and do whatever you like, but it may require more work for you in the end. That is simply the price of lots of customizations.</p>
+
+		<h2>What do I need to do?</h2>
+		<p>Simply use this page for reference when you are creating docs. Look at the the overall structure of the sections, subsections, API items, etc. while you are creating your docs. They should all flow naturally without confusing the end user. If you had to read something multiple times to understand it, chances are your users will too, so rework it.</p>
+		<p>You should also take a look at the source of this page if you ever wonder how to create elements like we have. This page isn't meant as a template to start from, but it does contain templates for all of the common elements you will use when creating with Docs.</p>
+		
+	</section>
+
+
+	<!-- Elements -->
+	<section id="elements" class="section">
+		<h1 class="title">Elements</h1>
+		<p class="description">Common elements used when creating docs</p>
+		<p class="intro">When writing documentation you end up repeating a lot of basic structure, elements, and such so you can have consitency. We have created majority of the basic elements and styling so you can have documentation done fast. Check out what is available to you.</p>
+		
+		<p class="note"><strong>Note:</strong> In addition to the stylings below, you can use styles that are packaged with the <a href="http://www.getskeleton.com/" target="_blank">Skeleton CSS framework</a>. This would include items such as columns, list formats, buttons, etc.</p>
+
+
+		<h2 id="elements_basic">Basic</h2>
+		<p>Here are some basic elements which apply to the whole page. By basic elements, we mean normal semantic markup that you would see in every HTML page. These tags do not need any specific classes or IDs unless noted.</p>
+		
+		<h3>Paragraphs</h3>
+		<pre><code>&lt;p&gt;Content goes here&lt;/p&gt;</code></pre>
+		<section class="example">
+			<small class="caption">Example</small>
+			<p>This is a sample paragraph. No classes, no IDs. You can add <strong>bold</strong> or <em>italic</em> text in here as you please.</p>
+		</section>
+		
+		<h3>Lists: Bullets, Numerical, Etc.</h3>
+		<pre><code>&lt;!-- unformatted --&gt;
+&lt;ul&gt;
+  &lt;li&gt;Unformatted list item #1&lt;/li&gt;
+  &lt;li&gt;Unformatted list item #2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+		<section class="example">
+			<small class="caption">Example</small>
+			<ul>
+				<li>Unformatted list item #1</li>
+				<li>Unformatted list item #2</li>
+			</ul>
+		</section>
+		<pre><code>&lt;!-- circle bullets --&gt;
+&lt;ul class="list"&gt;
+  &lt;li&gt;Formatted list item #1&lt;/li&gt;
+  &lt;li&gt;Formatted list item #2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+		<section class="example">
+			<small class="caption">Example</small>
+			<ul class="list">
+				<li>Formatted list item #1</li>
+				<li>Formatted list item #2</li>
+			</ul>
+		</section>
+
+
+		<h2 id="elements_notes">Notes, Importants</h2>
+		<p>Sometimes you need to point something out to your users. This may be a word of caution or a "Hey, seriously!" item. For this we have notes and importants. The text inside of the elements can be anything. It does not need to say "Note" or "Important".</p>
+
+
+		<h3>Notes</h3>
+		<pre><code>&lt;p class="note"&gt;&lt;strong&gt;Note:&lt;/strong&gt; You should probably read this.&lt;/p&gt;</code></pre>
+		<section class="example">
+			<small class="caption">Example</small>
+				<p class="note"><strong>Note:</strong> You should probably read this.</p>
+			</section>
+		</section>
+	
+		<h3>Important</h3>
+		<pre><code>&lt;p class="important"&gt;&lt;strong&gt;Important:&lt;/strong&gt; You really need to read this.&lt;/p&gt;</code></pre>
+		<section class="example">
+			<small class="caption">Example</small>
+			<p class="important"><strong>Important:</strong> You really need to read this.</p>
+		</section>
+		<pre><code>&lt;p class="important"&gt;&lt;strong&gt;Caution:&lt;/strong&gt; Be careful when using this function!&lt;/p&gt;</code></pre>
+		<section class="example">
+			<small class="caption">Example</small>
+			<p class="important"><strong>Caution:</strong> Be careful when using this function!</p>
+		</section>
+		
+		
+		
+		<h2 id="elements_code_blocks">Code Blocks</h2>
+		<p>If you are writing documentation for code, you will need lots of sample code. For this we have included <a href="http://softwaremaniacs.org/soft/highlight/en/" target="_blank">Highlighter.js</a> to provide syntax coloring for code blocks. This script will automatically run. By default, the script will assume your code is HTML and format it for so. If you want to use a specific language, you can add a class to it to tell the script to format for that language instead. See how to do this with the examples below.</p>
+		
+		<p class="note"><strong>Note:</strong> We only load the HTML, CSS, and JavaScript languages by default. If you want to change which ones to load, set this in your config options.</p>
+		
+		<h3>Code</h3>
+		<pre><code>&lt;pre&gt;&lt;code&gt;&lt;p&gt;Basic HTML code&lt;/p&gt;
+
+&lt;p&gt;And a second paragraph&lt;/p&gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
+		<section class="example nopad">
+			<small class="caption">Example</small>
+			<pre><code>&lt;pre&gt;&lt;code&gt;&lt;p&gt;Basic HTML code&lt;/p&gt;
+
+&lt;p&gt;And a second paragraph&lt;/p&gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
+		</section>
+		<pre><code>&lt;!-- code with javascript formatting --&gt;
+&lt;pre&gt;&lt;code class="javascript"&gt;// open a new window
+function openMe() {
+  window.open();
+}&lt;/code&gt;&lt;/pre&gt;</code></pre>
+		<section class="example nopad">
+			<small class="caption">Example</small>
+			<pre><code class="javascript">// open a new window
+function openMe() {
+  window.open();
+}</code></pre>
+		</section>
+		
+		<h3>Inline Code</h3>
+		<p>When you want code inline, do not use a <code>&lt;pre&gt;</code> tag around it. The <code>&lt;pre&gt;</code> tag is what triggers syntax coloring.</p>
+		<pre><code>Use the &lt;code&gt;code&lt;/code&gt; tag inline like so.</code></pre>
+		<section class="example">
+			<small class="caption">Example</small>
+			Use the <code>code</code> tag inline like so.
+		</section>
+		
+		
+		<h2 id="elements_examples">Examples, Output Samples</h2>
+		<p>If you want to show the sample output of something you would use our Examples or Output box. We made this to ensure the user does not get confused with what is sample output and what is describing the actual documentation. This box will visually surround the output for easy reading. The example box is not required when posting code samples, but you can include them if you'd like. These are required when you want to show sample HTML output.</p>
+		
+		<h3>Example</h3>
+		<p>The first element inside the example is the caption. This can be set to whatever you like. Default is <strong>Example</strong>. However, if the words <strong>Output</strong> or <strong>Sample</strong> suit your preview better, use one of those.</p>
+		<pre><code>&lt;section class=&quot;example&quot;&gt;
+	&lt;small class=&quot;caption&quot;&gt;Example&lt;/small&gt;
+		Example Content
+	&lt;/section&gt;
+&lt;/section&gt;</code></pre>
+		<section class="example">
+			<small class="caption">Example</small>
+				Example Content
+			</section>
+		</section>
+		<pre><code>&lt;!-- without padding; useful when including code --&gt;
+&lt;section class=&quot;example nopad&quot;&gt;
+	&lt;small class=&quot;caption&quot;&gt;Example&lt;/small&gt;
+		Example Content
+	&lt;/section&gt;
+&lt;/section&gt;</code></pre>
+		<section class="example nopad">
+			<small class="caption">Example</small>
+				Example Content
+			</section>
+		</section>
+		
+	</section>
+	
+	
+	<!-- CHANGELOG -->
+	<section id="changelog" class="section">
+		<h1 class="title">Changelog</h1>
+		<p class="description">Changes made to the standards throughout time.</p>
+		
+		<h2>v1.0 / 11.05.2012</h2>
+		<ul class="list">
+			<li>Initial release</li>
+		</ul>
+	</section>
+
+
+	<!-- LICENSE -->
+	<section id="license" class="section">
+		<h1 class="title">License</h1>
+		<p class="description">What you can and can't do with this project.</p>
+
+		<h2>Released under MIT License</h2>
+		<p>We have released <strong>_Project_</strong> under the MIT License which is stated as:</p>
+		<pre><code class="no-highlight">Copyright &copy; 2012 by _Company_
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</code></pre>
+	</section>
+
+	<footer id="footer">
+		<p>Copyright &copy; 2011-2012 <a href="#license">MIT License</a> by <a href="http://web.cmfolio.com">cmfolio</a></p>
+	</footer>
+
+</div>
+
+</body>
+</html>

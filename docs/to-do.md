@@ -1,5 +1,5 @@
 ﻿# Docs Template  
-A basic HTML/CSS template for code documentation.
+A Skeleton based theme and HTML template for code documentation.
 
 ---
 

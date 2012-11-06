@@ -1,7 +1,12 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
     <title>Docs | A basic HTML/CSS template for code documentation.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="../_template/styles/themes/default.css" title="default" />
 		<link rel="alternate stylesheet" href="../_template/styles/themes/basic.css" title="basic" />
 		<link rel="stylesheet" href="../_template/js/highlight/styles/vs.css" />
@@ -21,34 +26,38 @@
 		   }
 		}
 		</script>
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
 
-<div id="wrapper">
+<div id="wrapper" class="container">
 
-	<div id="top">
+	<header id="top">
 		<h1 id="title">Docs</h1>
 		<h2 id="description">A basic HTML/CSS template for code documentation.</h2>
 		<a href="#toc" id="toc-link">Table of Contents</a>
-	</div>
+	</header>
 
-	<div id="toc" class="section clearthis">
-		<h1>Table of Contents</h1>
+	<nav id="toc" class="section clearfix">
+		<h1 class="title">Table of Contents</h1>
 
-		<div class="col one clear">
+		<div class="columns four">
 			<h2>Documentation</h2>
 			<ul>
 				<li><a href="#overview">Overview <span class="arrow">&raquo;</span></a></li>
 				<li><a href="#themes">Themes <span class="arrow">&raquo;</span></a></li>
 			</ul>
 		</div>
-		<div class="col two">
+		<div class="columns four">
 			<h2>Examples</h2>
 			<ul>
-				<li><a href="#examples">See All Examples <span class="arrow">&raquo;</span></a></li>
+				<li><a href="#sites_using_docs">Sites Using Docs <span class="arrow">&raquo;</span></a></li>
+				<li><a href="style-guide.html">Docs Style Guide <span class="arrow">&raquo;</span></a></li>
 			</ul>
 		</div>
-		<div class="col three">
+		<div class="columns four">
 			<h2>Project Notes</h2>
 			<ul>
 				<li><a href="changelog.md">Changelog <span class="arrow">&raquo;</span></a></li>
@@ -57,18 +66,17 @@
 				<li><a href="#license">License <span class="arrow">&raquo;</span></a></li>
 			</ul>
 		</div>
-		<div class="col four">
+		<div class="columns four">
 			<h2>Contributors</h2>
 			<ul>
 				<li><em>chad d</em> | <a href="http://web.cmfolio.com/">cmfolio.com</a></li>
 			</ul>
 		</div>
-	</div>
+	</nav>
 
-	<div id="overview" class="section">
-		<h1>Overview</h1>
-		<p>Learn what <strong>Docs</strong> is all about and how you can use it.</p>
-		<p></p>
+	<section id="overview" class="section">
+		<h1 class="title">Overview</h1>
+		<p class="description">Learn what <strong>Docs</strong> is all about and how you can use it.</p>
 		
 		<h2>What does it do?</h2>
 		<p><strong>Docs</strong> is a simple HTML and CSS template for documentation of a project. It is made to provide documentation for smaller projects that don't need a whole user guide. An ideal use of <strong>Docs</strong> would be for a project with 5-6 basic <em>sections</em> that need to be covered. There is no limit to how many pages you can create. However, anything excessive would make better use of a full feature documentation tool.</p>
@@ -101,12 +109,12 @@
 
 		<h2>Some Examples</h2>
 		<p>This documentation is powered by <strong>Docs</strong> so there really isn't much more to show. You can see our different <a href="#themes">Themes</a> or take the time to view the source of these docs or the <code>_template</code> folder if you'd like.</p>
-	</div>
+	</section>
 	
 	<!-- THEMES -->
-	<div id="themes" class="section">
-		<h1>Themes</h1>
-		<p>Design <strong>Docs</strong> to fit your project</p>
+	<section id="themes" class="section">
+		<h1 class="title">Themes</h1>
+		<p class="description">Design <strong>Docs</strong> to fit your project</p>
 
 		<h2 id="available_themes">Available Themes</h2>
 		<p>We currently include two themes with <strong>Docs</strong>: <a href="#available_themes" onclick="setActiveStyleSheet('default')">default</a> and <a href="#available_themes" onclick="setActiveStyleSheet('basic')">basic</a>. Click on the links to preview them on this documentation.</p>
@@ -116,22 +124,36 @@
 		
 		<h2>Contributing Themes</h2>
 		<p>If you have created a theme that you would like to contribute to <strong>Docs</strong>, please <a href="https://github.com/chadwithuhc/docs-template" target="_blank">fork the project</a> on github and submit a pull request for us to add it in. We thank you for any contributions!</p>
-	</div>
+	</section>
+	
+	
+	<!-- USING DOCS -->
+	<section id="sites_using_docs" class="section">
+		<h1 class="title">Sites Using Docs</h1>
+		<p class="description">Who is using docs already?</p>
+		<p class="intro">Docs is a fairly fresh project which was only created to satisfy a personal itch. We have decided to share it with the world because the world needs documentation. Since we use it, most of the sites listed here are our own. If you have a site you would like added to the list, please fork the repo and submit a pull request.</p>
+		
+		<ul class="list">
+			<li><strong>Docs</strong> &ndash; Of course, Docs itself runs on Docs. It'd be silly if we didn't.</li>
+			<li><a href="http://web.cmfolio.com/projects/rotator/" target="_blank">Rotator.js</a> &ndash; A javascript banner rotator built on jQuery with extensive features and expandability.</li>
+		</ul>
+		
+	</section>
 
 	<!-- SUPPORT -->
-	<div id="support" class="section">
-		<h1>Support</h1>
-		<p>eh. not so much.</p>
+	<section id="support" class="section">
+		<h1 class="title">Support</h1>
+		<p class="description">eh. not so much.</p>
 
 		<h2>Sorry</h2>
 		<p>Unfortunately, we do not offer any support at the moment. <strong>Docs</strong> is made as a base template, so turn it into what you want!</p>
-	</div>
+	</section>
 
 
 	<!-- LICENSE -->
-	<div id="license" class="section">
-		<h1>License</h1>
-		<p>What you can and can't do with this project.</p>
+	<section id="license" class="section">
+		<h1 class="title">License</h1>
+		<p class="description">What you can and can't do with this project.</p>
 
 		<h2>Released under MIT License</h2>
 		<p>We have released <strong>Docs</strong> under the MIT License which is stated as:</p>
@@ -154,11 +176,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.</code></pre>
-	</div>
+	</section>
 
-	<div id="footer">
-		<p>Copyright &copy; 2011-2012 <a href="#license">MIT License</a> by <a href="http://cmfolio.com">cmfolio</a></p>
-	</div>
+	<footer id="footer">
+		<p>Copyright &copy; 2011-2012 <a href="#license">MIT License</a> by <a href="http://web.cmfolio.com">cmfolio</a></p>
+	</footer>
 
 </div>
 

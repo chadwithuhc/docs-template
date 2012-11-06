@@ -1,9 +1,14 @@
 ﻿# Docs Template  
-A basic HTML/CSS template for code documentation.
+A Skeleton based theme and HTML template for code documentation.
 
 ---
 
 ## Changelog  
+
+### v1.1 / 11.05.2012
+- Completely updated theme to run on skeleton CSS responsive framework now
+- New coding standards added along style guide for code examples and sample output
+
 
 ### v1.0.1 / 10.20.2011
 - Add some more styling for `default.css` for easier readability when a lot of api calls are listed
