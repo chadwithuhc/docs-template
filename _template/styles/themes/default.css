@@ -45,8 +45,8 @@ li { color: #000 }
 p.nopad { margin-bottom: 5px }
 .section { padding: 20px 0px 10px; border-top: dotted 1px #333 }
 .clear { clear: both }
-.title + .description { margin: 0 1em 2%; padding: .5em; vertical-align: middle; border-bottom: dashed 1px #ccc; float: left }
-.description + .meta, .title + .meta { float: left; font-style: italic; margin: -2% 1em 1%; padding: .5em }
+.title + .description { margin: 0 1em 2%; padding: .5em; vertical-align: middle; border-bottom: dashed 1px #ccc; float: right; text-align: right }
+.description + .meta, .title + .meta { float: right; font-style: italic; margin: -2% 1em 1%; padding: .5em; text-align: right }
 .title + .meta { margin-top: 0 }
 .hr { margin: 10px auto 20px; width: 100px; border-top: double 4px #c00 }
 .anchor { padding-top: 20px }
